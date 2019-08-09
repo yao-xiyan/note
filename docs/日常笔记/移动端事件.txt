@@ -1,0 +1,36 @@
+1、触摸事件
+       特点：
+	PC不生效，只能在移动端生效
+	只能用addEventListener 注册
+
+
+	移动端事件：触摸事件
+	touchstart   -   会在手指触摸到屏幕的时候触发
+	touchmove -   会在手指触摸到屏幕，移动的过程中触发
+	touchend    -   会在手指离开屏幕的瞬间触发
+	※ 必须在移动端才可以
+2、触摸对象属性：触摸点
+	事件对象.touches        	 - 屏上面的触摸点
+	事件对象.targetTouches 	 - 元素上面的触摸点
+	时间对象.changedTouches	 - 变化的触摸点
+3、封装tap事件
+	自己封装的tap事件
+	@param {element}  element	事件源
+	@param {juli}          juli  	手指抖动的最大偏移量
+	@param {time}       time  	点下的最大毫秒数
+	@param {fn}           fn  	点击之后执行的函数体
+
+
+	function EventTap(element,juli,time,fn){
+	}
+4、API引入
+	Zepto <script src=""></script>
+	Zepto 类库 是针对 移动端封装专用的类库
+	封装好的功能更简单的使用
+	1:操作DOM节点:增删
+	2：注册事件
+	3：操作属性（标准、自定义）
+
+	Touch.js 类库 把多个功能分割为多个独立的模块
+	引入，但是必须是在引入了zepto.js之后引入，因为touch.js仅仅是zepto.js的功能的拓展
+	

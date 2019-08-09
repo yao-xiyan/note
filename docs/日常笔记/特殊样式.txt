@@ -1,0 +1,34 @@
+特殊样式
+	1、 /*CSS3盒子模型*/
+   	 box-sizing: border-box; 怪异盒子模型
+  	  -webkit-box-sizing: border-box;
+    	2、/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+  	  -webkit-tap-highlight-color: transparent;
+   	3、 /*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+  	  -webkit-appearance: none;
+   	4、 /*禁用长按页面时的弹出菜单*/
+   	 img,a { -webkit-touch-callout: none; }
+
+
+A190602798
+
+媒体查询：档位划分；市场上默认的划分；三个节点、四个档位
+
+
+- w<768  超小屏幕（**手机，学习rem布局里面的档位划分都是在这个范围**）
+
+- 768<= w <992  小屏设备（平板）
+
+- 992<= w <1200  中等屏幕（桌面显示器）
+
+- 1200<=w 大宽屏设备（大桌面显示器）
+约定
+
+键盘码：https://www.cnblogs.com/yiven/p/7118056.html
+
+昌哥github：https://github.com/zc3hd/demo_Interview/tree/master/src_webapp/modules/014_doc_capability
+
+- 中文API：https://www.html.cn/doc/zeptojs_api/
+- 
+
+swiper 插件：https://www.swiper.com.cn/

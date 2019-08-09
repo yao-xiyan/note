@@ -1,0 +1,63 @@
+实际项目中：
+	1、通配符选择器（*）不推荐使用
+	2、IE内核（Trident）   firefox火狐(Gecko)   Safari(webkit)  Chrome谷歌(Chromium)  Opera(Presto)
+	3、谷歌的font-family字体微软雅黑 
+	4、移动端字号大小font-size 一般用14px;最低的12px：
+	5、font:{ font-style font-weight font-size/line-heignt font-family}
+		样式	粗细	      大小/行高	      字体“微软雅黑Microsoft YaHei”
+	6、浏览器默认文字大小16px font-size 	line-height: normal 默认值  约等于1.1-1.3倍
+	7、UI给的图不能加东西，解决嵌套块元素垂直外边距的合并用overflow:hidden(触发BFC，块级格式化上下文，独立的布局区域，不会受到外部因素的干扰)
+	8、css样式分析，先清除标签的默认样式，写结构样式，然后分析内容
+	9、whith-space: nowrap;   强制一行显示  overflow:hiddden; 隐藏   text-overflow:ellipsis  省略号    这三个缺一不可
+	10、www.bitbugq.net   准备icon图标网站
+	11、网站优化三大标签 TDK
+	title	description	keywords		
+	12、shurcut  导航  
+	13、li不能一行显示，是因为ul的宽度不够，加宽ul的宽度给ul父元素设置overflow:hidden;
+	14、position:relative    z-index改变层级
+	15、required 必填项  输入的内容不能为空
+	16、open HTML in Defaule Browser 直接在VCODE打开HTML
+	17、Chinese Laugenes VScode 汉化包
+	18、精灵图一定要用背景图	二倍图一起缩放
+移动端
+	1、兼容移动端主流浏览器，处理Webkit内核浏览器即可
+	2、<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">配置视口	
+	3、移动布局想要的理想视口就是手机屏幕有多宽，我们的布局视口就有多宽
+	4、移动端主流开发选择：单独制作移动端页面
+
+
+
+npm镜像 
+npm config set registry https://registry.npm.taobao.org
+
+npm cache clear --force
+
+第一步npm i docsify-cli -g
+
+第二步 docsify init ./docs
+第三步docsify serve docs
+
+https://github.com/yao-xiyan/note/tree/master/docs
+git init //初始化
+git add README.md   /添加所有文件  git add .   /需要
+git commit -m "first commit"
+git remote add origin https://github.com/lixiaohui100200/bk.git (第一次提交)//需要
+git push -u origin master//需要
+
+
+Device verification code  设备验证
+按钮开关属性
+checked
+disabled   开关禁用
+e.target.nodeName 获取DOM节点名
+
+- 创建：
+  - innerHTML
+  - document.write();
+  - document.createElement('li')
+- 添加：参考
+  - 父节点.appendChild(新DOM节点)：从后添加新的DOM节点；
+  - 父节点.insertBefore(新DOM节点，插入谁之前的DOM节点)：在某个元素之前，添加新的DOM节点
+- 修改：
+  - innerHTML：结构；
+  - innerText：文本内容；
